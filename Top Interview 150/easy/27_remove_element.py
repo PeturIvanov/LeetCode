@@ -6,3 +6,4 @@ class Solution(object):
                 nums[k] = num
                 k += 1
         return k
+
