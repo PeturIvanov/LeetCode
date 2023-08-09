@@ -1,11 +1,11 @@
 class Solution(object):
     def maxProfit(self, prices):
         profit = 0
-
         buy, sell = 0, 1
 
         while buy < len(prices) and sell < len(prices):
             current_buy_price, current_sell_price = prices[buy], prices[sell]
+
             if current_buy_price > current_sell_price:
                 buy = sell
                 sell = buy + 1
